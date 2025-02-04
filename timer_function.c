@@ -1,3 +1,6 @@
+//Atividade  1 - Usando add_repeating_timer para controle de leds
+//Gilmaiane Porto Silva
+
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/timer.h"
