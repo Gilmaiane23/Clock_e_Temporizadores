@@ -1,28 +1,30 @@
-# Atividade 1: Temporizador Periódico - Semáforo
-
-Este repositório contém o código desenvolvido para a **Atividade 1** da disciplina, que implementa um semáforo com temporização de 3 segundos para cada alteração de sinal. O semáforo é acionado por LEDs (vermelho, amarelo e verde), utilizando a função `add_repeating_timer_ms()` do Pico SDK.
+# Clock e Temporizadores
 
 ## Descrição
+Este repositório contém o código desenvolvido para as atividades do **Capítulo 5 - C5O123A**, parte da **Unidade 4** da disciplina de **Embarcação e Tecnologias**. O projeto consiste em dois sistemas de temporização utilizando o **Raspberry Pi Pico W** e o **Pico SDK**:
 
-O código simula um semáforo com LEDs que alternam de acordo com um temporizador. A cada 3 segundos, o semáforo muda entre as cores:
+1. **Atividade 1: Semáforo com Temporizador Periódico**  
+2. **Atividade 2: Temporizador de Um Disparo (One Shot)**
 
-1. **Vermelho**
-2. **Amarelo**
-3. **Verde**
+## Estrutura do Repositório
+O repositório está organizado em dois diretórios principais, cada um correspondendo a uma das atividades:
 
-Este comportamento é implementado com a função `add_repeating_timer_ms()` para criar um temporizador periódico.
+- **Atividade_1_TemporizadorPeriodico**  
+  Contém o código do semáforo com temporização de 3 segundos para cada alteração de sinal. O semáforo é acionado por LEDs (vermelho, amarelo e verde), com uso da função `add_repeating_timer_ms()`.
 
-## Instruções de Uso
+- **Atividade_2_OneShot**  
+  Contém o código para a implementação de um temporizador de um disparo (One Shot) acionado por um botão. O sistema aciona LEDs (azul, vermelho e verde) com a função `add_alarm_in_ms()`. A mudança de estado dos LEDs ocorre após 3 segundos.
 
-### Modos de Simulação
+## Requisitos
+- **Raspberry Pi Pico W**
+- **VS Code** com suporte ao **Pico SDK**
+- **Wokwi** para simulação
+- **BitDogLab** para experimentação com o LED RGB
 
-Para escolher entre os dois modos de simulação (Wokwi ou BitDogLab), altere a definição da constante `WOKWI_MODE` no código. Se estiver utilizando o **Wokwi**, defina como `1`; se estiver utilizando o **BitDogLab**, defina como `0`.
+## Como Usar
 
-```c
-// Modo de simulação: 1 para Wokwi, 0 para BitDogLab
-#define WOKWI_MODE 1
+### 1. Clone o Repositório
+Para clonar o repositório, execute o seguinte comando no seu terminal:
 
-## Vídeo de Demonstração
 ```bash
-   
-   ```
+git clone https://github.com/Gilmaiane23/Clock-e-Temporizadores.git
